@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.stopwatch_container {
+  font-family: "Raleway", sans-serif;
+  padding: 10px 150px;
+  border-radius: 10px;
+  background: #1b1b1b;
+  border: 1px solid #aaa;
+  box-shadow: 0 0 50px 25px rgba(255, 0, 0, 0.3);
+}
+
+.stopwatch_heading {
+  text-align: center;
+  color: aliceblue;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.stopwatch_time_guide {
+  text-align: center;
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.stopwatch_time {
+  text-align: center;
+  font-size: 80px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.stopwatch_time_guide {
+  font-size: 20px;
+}
+.stopwatch_controls {
+  display: flex;
+  justify-content: space-evenly;
+}
+.stopwatch_controls img {
+  height: 150px;
+  width: 150px;
+  cursor: pointer;
+}
+.d-none {
+  display: none;
+}
+
+.wrapper {
+  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+  border-radius: 10px;
+  animation: animate 1.5s linear infinite;
+}
